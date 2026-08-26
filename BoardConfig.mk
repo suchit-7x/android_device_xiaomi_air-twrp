@@ -112,6 +112,9 @@ TW_INCLUDE_RESETPROP := true
 TW_INCLUDE_LIBRESETPROP :=true
 TW_INCLUDE_REPACKTOOLS := true
 
+# USB Mounting
+TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.usb0/lun.%d/file
+
 # TWRP Configuration
 TW_FRAMERATE := 60
 TW_THEME := portrait_hdpi
