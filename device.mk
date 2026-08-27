@@ -87,10 +87,6 @@ PRODUCT_PACKAGES += \
 # Additional target Libraries
 TARGET_RECOVERY_DEVICE_MODULES += \
     android.hardware.keymaster@4.1
-    
-
-TARGET_INIT_VENDOR_LIB := libinit_xaga
-TARGET_RECOVERY_DEVICE_MODULES := libinit_xaga
 
 TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += \
     $(TARGET_OUT_SHARED_LIBRARIES)/android.hardware.keymaster@4.1.so
