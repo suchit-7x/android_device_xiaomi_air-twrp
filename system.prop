@@ -1,0 +1,8 @@
+# Fstab
+ro.postinstall.fstab.prefix=/system
+
+# USB MTP
+ro.sys.usb.storage.type=mtp
+
+# HideReflashTWRP
+ro.twrp.vendor_boot=true

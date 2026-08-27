@@ -93,6 +93,9 @@ TARGET_SCREEN_WIDTH := 720
 # Treble
 BOARD_VNDK_VERSION := current
 
+# Properties
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+
 # Recovery
 TARGET_NO_RECOVERY := true
 BOARD_HAS_LARGE_FILESYSTEM := true
