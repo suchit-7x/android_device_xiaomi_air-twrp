@@ -4,5 +4,18 @@ ro.postinstall.fstab.prefix=/system
 # USB MTP
 ro.sys.usb.storage.type=mtp
 
+# Crypto
+ro.crypto.volume.filenames_mode=aes-256-cts
+
+# TEE
+ro.vendor.mtk_tee_gp_support=1
+ro.vendor.mtk_microtrust_tee_support=1
+
+# Gatekeeper
+ro.hardware.gatekeeper=mitee
+
+# Keystore
+ro.hardware.kmsetkey=mitee
+
 # HideReflashTWRP
 ro.twrp.vendor_boot=true

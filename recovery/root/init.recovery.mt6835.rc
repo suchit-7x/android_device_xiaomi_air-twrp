@@ -1,3 +1,6 @@
+import /vendor/etc/init/tee-supplicant.rc
+import /vendor/etc/init/miteelog.rc
+
 on init
     setprop sys.usb.configfs 1
     setprop sys.usb.controller "11201000.usb0"

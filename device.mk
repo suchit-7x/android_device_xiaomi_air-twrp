@@ -69,3 +69,28 @@ PRODUCT_PACKAGES += \
 # Drm
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4
+
+# Keystore
+PRODUCT_PACKAGES += \
+    android.system.keystore2
+
+# Keymint
+PRODUCT_PACKAGES += \
+    android.hardware.security.keymint \
+    android.hardware.security.secureclock \
+    android.hardware.security.sharedsecret
+
+# Keymaster
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@4.1
+
+# Additional target Libraries
+TARGET_RECOVERY_DEVICE_MODULES += \
+    android.hardware.keymaster@4.1
+    
+
+TARGET_INIT_VENDOR_LIB := libinit_xaga
+TARGET_RECOVERY_DEVICE_MODULES := libinit_xaga
+
+TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += \
+    $(TARGET_OUT_SHARED_LIBRARIES)/android.hardware.keymaster@4.1.so
