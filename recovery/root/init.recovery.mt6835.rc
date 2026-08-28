@@ -58,3 +58,12 @@ on boot
     start health-hal-2-1
     start vendor.vibrator-default
     setprop sys.usb.config adb
+
+on boot
+    insmod /vendor/modules/mtk_rpmsg_mbox.ko
+    insmod /vendor/modules/mtk_tinysys_ipi.ko
+    insmod /vendor/modules/mtk-afe-external.ko
+    insmod /vendor/modules/scp.ko
+    insmod /vendor/modules/lct_tp.ko
+    insmod /vendor/modules/xiaomi_tp.ko
+    insmod /vendor/modules/nt36528_spi.ko
