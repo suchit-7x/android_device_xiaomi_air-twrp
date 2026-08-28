@@ -47,6 +47,14 @@ service mtk.plpath.utils.link /system/bin/mtk_plpath_utils
     oneshot
     seclabel u:r:recovery:s0
 
+service vendor.vibrator-default /vendor/bin/hw/android.hardware.vibrator-service.mediatek
+    class hal
+    user root
+    group root system
+    setenv LD_LIBRARY_PATH /vendor/lib64:/vendor/lib:/system/lib64:/system/lib:/sbin
+    seclabel u:r:recovery:s0
+
 on boot
     start health-hal-2-1
+    start vendor.vibrator-default
     setprop sys.usb.config adb
