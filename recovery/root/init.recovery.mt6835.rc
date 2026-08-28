@@ -67,3 +67,5 @@ on boot
     insmod /vendor/modules/lct_tp.ko
     insmod /vendor/modules/xiaomi_tp.ko
     insmod /vendor/modules/nt36528_spi.ko
+    insmod /vendor/modules/mt6377-accdet.ko
+    insmod /vendor/modules/ft8057p_spi.ko
